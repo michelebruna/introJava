@@ -13,12 +13,19 @@ public class Medidas {
     // O print escreve na linha. O println escreve e muda de linha. Sempre tem que informar um método inicial (public void main).
     // Atalho para chamar o método principal: digitar sout e pressionar enter ou tab
     // Quanto menos linhas de código, melhor
-    //O println entende o tipo a partir do lançamento. Se selecionar o int mas informar string, o ide entende.
+    // O println entende o tipo a partir do lançamento. Se selecionar o int mas informar string, o ide entende.
+    // Dentro do método main só enxerga os métodos static
 
     public static void main(String[] args){
-        System.out.println ("Cálculo de Areas");
 
-        //Cálculo de área - Reduzido
+    calcularAreaModoCurto();
+    calcularAreaModoExtenso();
+
+    }
+
+    public static void calcularAreaModoCurto(){
+
+        System.out.println ("Cálculo de Areas Modo Curto");
 
         int largura = 4;
         int comprimento = 3;
@@ -29,7 +36,10 @@ public class Medidas {
     }
 
     //Para escrever nome de método (camel case). Primeira letra da palavra minúscula e a partir do segundo, maiúscula.
-    public void calcularAreaModoExtenso(){
+    public static void calcularAreaModoExtenso(){
+
+        System.out.println ("Cálculo de Areas Modo Extenso");
+
         //Cálculo de área = Exemplo: o tamanho do tapete ou do piso
         int largura;
         int comprimento;
