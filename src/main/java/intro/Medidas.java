@@ -10,13 +10,15 @@ public class Medidas {
     // Métodos: é escrita mas não tem retorno. Faz o processo. Método usa o void (não tem retorno)
     // Funções: faz e dá retorno. Função usa o tipo da função (int, string, char...).
     // String [] significa que pode receber uma lista de caracteres.
-    // O print escreve na linha. O println escreve e muda de linha
+    // O print escreve na linha. O println escreve e muda de linha. Sempre tem que informar um método inicial (public void main).
     // Atalho para chamar o método principal: digitar sout e pressionar enter ou tab
     // Quanto menos linhas de código, melhor
     //O println entende o tipo a partir do lançamento. Se selecionar o int mas informar string, o ide entende.
 
     public static void main(String[] args){
         System.out.println ("Cálculo de Areas");
+
+        //Cálculo de área - Reduzido
 
         int largura = 4;
         int comprimento = 3;
@@ -26,6 +28,7 @@ public class Medidas {
 
     }
 
+    //Para escrever nome de método (camel case). Primeira letra da palavra minúscula e a partir do segundo, maiúscula.
     public void calcularAreaModoExtenso(){
         //Cálculo de área = Exemplo: o tamanho do tapete ou do piso
         int largura;
@@ -41,16 +44,4 @@ public class Medidas {
                 "m a área é de " + resultado + "m2");
     }
 
-    //Cálculo de área Reduzido.
-    //Para escrever nome de método (camel case). Primeira letra da palavra minúscula e a partir do segundo, maiúscula.
-
-    public void calcularAreaModoCompacto(){
-        int largura = 4;
-        int comprimento = 3;
-
-        System.out.println("Para a largura de " + largura + "m e o comprimento de " + comprimento +
-                "m a área é de " + largura * comprimento + "m2");
-
-
-    }
-}
+   }
